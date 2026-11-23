@@ -10,4 +10,5 @@ df = pd.read_csv(filepath_)
 
 important_cols = ["NEIGHBORHOOD", "ADDRESS", "APARTMENT NUMBER", "EASEMENT", "LAND SQUARE FEET", "SALE PRICE", "SALE DATE"]
 
-print(df[important_cols].head())
+# Ask Pandas for a full column report
+df_info = df.info()
