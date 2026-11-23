@@ -12,3 +12,8 @@ important_cols = ["NEIGHBORHOOD", "ADDRESS", "APARTMENT NUMBER", "EASEMENT", "LA
 
 # Ask Pandas for a full column report
 df_info = df.info()
+
+# Ask Pandas to count the missing values prescisely
+df_missing = df.isnull().sum()
+
+print(df.shape)
